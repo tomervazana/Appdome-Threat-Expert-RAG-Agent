@@ -1,0 +1,31 @@
+# Appdome Threat Expert RAG Agent
+# --------------------------------
+# Install:
+#   pip install -r requirements.txt
+#
+# Notes:
+# - This project runs fully offline for embeddings + retrieval (SentenceTransformers + FAISS).
+# - Generation is done via a *local* Ollama server (http://localhost:11434) using an open-source model (e.g., llama3).
+# - If you want only the CLI pipeline, the "Bonus Web UI" deps are optional.
+
+# --- Core crawling ---
+requests>=2.31.0
+beautifulsoup4>=4.12.2
+lxml>=4.9.3
+
+# --- Embeddings + vector DB ---
+numpy>=1.24.0
+sentence-transformers>=2.6.1
+faiss-cpu>=1.7.4
+
+# --- Quality-of-life (often pulled transitively but pinned here for stability) ---
+tqdm>=4.66.0
+
+# --- Tests ---
+pytest>=7.4.0
+
+# --- Bonus Web UI (optional) ---
+streamlit>=1.32.0
+fastapi>=0.110.0
+uvicorn>=0.27.0
+pydantic>=2.0.0

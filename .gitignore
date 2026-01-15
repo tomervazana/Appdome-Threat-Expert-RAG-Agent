@@ -1,0 +1,16 @@
+# -------------------------
+# Python / Virtualenv
+# -------------------------
+.venv/
+__pycache__/
+.pytest_cache/
+
+# -------------------------
+# IDEs / Editors
+# -------------------------
+.idea/
+
+# -------------------------
+# Project data artifacts (crawler output + FAISS index)
+# -------------------------
+data/
