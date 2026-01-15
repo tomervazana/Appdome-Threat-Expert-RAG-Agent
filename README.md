@@ -236,19 +236,9 @@ This project defaults to **proxy-safe** behavior (do not trust proxy env vars). 
 
 ## Bonus: Web UI (Browser Chat)
 
-Two minimal options are included so you can demo like a product, not a script.
-
-### Option A — Streamlit (fastest demo)
-
+### FastAPI
 ```bash
-pip install -r requirements_webui.txt
-streamlit run web_ui.py
-```
-
-### Option B — FastAPI (best for plugging into any web chat template)
-
-```bash
-pip install -r requirements_api.txt
+pip install -r requirements.txt
 uvicorn api_server:app --host 127.0.0.1 --port 8000
 ```
 
