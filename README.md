@@ -30,7 +30,6 @@ This solution is designed to be **fully offline for embeddings + retrieval**, an
 ├── crawler.py                # Scrape Appdome How-To KB into JSON
 ├── ingest.py                 # Build embeddings + FAISS index from crawled JSON
 ├── chat.py                   # CLI RAG agent (retrieve → prompt → generate)
-├── web_ui.py                 # (Bonus) Streamlit web chat UI
 ├── api_server.py             # (Bonus) FastAPI backend + minimal HTML chat
 ├── data/
 │   ├── raw/                  # Output of crawler (JSON per article)
