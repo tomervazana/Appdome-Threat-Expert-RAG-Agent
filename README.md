@@ -226,12 +226,6 @@ ollama serve
 ollama pull llama3
 ```
 
-**Common pitfall (strong opinion):** if you’re in a proxy-heavy environment, `requests` can route `localhost` through the proxy and fail even though the browser says “Ollama is running”.
-This project defaults to **proxy-safe** behavior (do not trust proxy env vars). If needed:
-
-* set `NO_PROXY=localhost,127.0.0.1`
-* or run `chat.py` with `--trust-env true` (only if you actually want env proxies)
-
 ---
 
 ## Bonus: Web UI (Browser Chat)
